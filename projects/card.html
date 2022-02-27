@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* ..................navbar............ */
+
+        @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;1,600&family=IBM+Plex+Serif:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gelasio', serif;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+body{
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    /* background: #9AD0EC; */
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    transition-delay: 0.1s;
+ 
+  
+ 
+}
+
+/* .nav{
+    background-color: green;
+} */
+
+.nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    /* background-color: blue; */
+    list-style-type: none;
+}
+
+.nav ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+      /* background-color: aqua; */
+}
+
+.icons{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+ .icons .link{
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.icons button{
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ffff;
+
+}
+
+.icons .shopping{
+    font-size: 22px;
+    margin: 0px 0px 0px 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .nav{
+        display: none;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+   
+  }
+
+/* @media screen and (max-width: 960px) {
+    .nav{
+        display: none;
+    }
+   
+  }
+
+@media screen and (max-width: 720px) {
+    .nav{
+        display: none;
+    }
+   
+  }
+
+@media screen and (max-width: 480px) {
+    .nav{
+        display: none;
+    }
+    
+  }*/
+
+/* .......end.............. */
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;1,600&family=IBM+Plex+Serif:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gelasio', serif;
+    font-family: 'IBM Plex Serif', serif;
+} */
+
+.header1{
+    width: 100%;
+    background: #9AD0EC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    position: fixed;
+    top: -70px;
+    transition: top 0.3s;
+ 
+}
+
+/* .nav{
+    background-color: green;
+} */
+
+.nav ul li{
+    display: inline-block;
+    margin: 5px 30px;
+    /* background-color: blue; */
+    list-style-type: none;
+}
+
+.nav ul li a{
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    text-decoration: none;
+    text-align: center;
+    /* color: #000; */
+    /* background-color: aqua; */
+}
+
+  .fa-shop{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }  
+
+
+  .fa-dog{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }    
+
+  .fa-cat{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }   
+  
+  .fa-dove{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }    
+
+  .fa-fish{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }    
+
+
+  .fa-paw{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }  
+  
+  .fa-frog{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+ /* .fa-solid{
+  
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: aqua;
+  
+ } */
+
+.icons{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.icons .link{
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.icons button{
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ffff;
+
+}
+
+.icons .shopping{
+    font-size: 22px;
+    margin: 0px 0px 0px 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .nav{
+        display: none;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+   
+  }
+
+ /* .............navbar end.........  */
+
+      .container{
+          width: 100%;
+          height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+      }
+
+      .card-body{
+          width: 1120px;
+          /* background-color: red; */
+          display: flex;
+      }
+
+      .card-item{
+         width: 300px;
+         /* background: #D3B5E5; */
+         background: #FBF8F1;
+         padding: 20px;
+         margin: 15px 17px;
+         cursor: pointer;
+         border-radius: 20px;
+         box-shadow: 2px 2px 3px #000;
+         overflow: hidden;
+      
+      }
+   
+    
+      .card-image img{
+         width: 100%;
+         height: 100%;
+         border-radius: 20px;
+         transition: .4s;
+         object-fit: cover;
+       
+         
+         
+      }
+      .card-image img:hover{
+       
+          transform: scale(1.2);
+         
+      }
+      .heading{
+          text-align: center;
+          /* background-color: aqua; */
+          text-transform: capitalize;
+          font-size: 20px;
+          font-weight: bold;
+          color: #9C0F48;
+      }
+
+      .btn{
+        text-align: center;
+      
+      }
+
+      .btn button{
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-shadow: 1px 1px 2px #fff;
+        background-color: #CEE5D0;
+      }
+
+      .btn button:hover{
+        background-color: #986D8E;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+    
+      }
+
+      .parallax {
+  /* The image used */
+  background-image: url("images/tiger.jpg");
+
+  /* Set a specific height */
+  /* min-height: 500px; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+ background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+      
+
+
+/* ............brand....... */
+
+.brand{
+    width: 100%;
+    /* background-color: #9C0F48; */
+    padding: 30px 0px;
+}
+.brand-row{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    /* background-color: blue; */
+}
+
+.brand-row1{
+    display: flex;
+    /* background-color: green; */
+}
+
+.brand-row1 div{
+    /* background-color: red; */
+    margin: 17px 14px;
+
+  
+}
+
+.col5 img{
+    margin: 18px 0px;
+    color: #041562;
+}
+
+.col4 img{
+    margin: 12px 0px;
+}
+
+.col3 img{
+    /* margin: 35px 15px; */
+    margin: 37px 0px;
+}
+
+.col2 img{
+    /* margin: 44px 24px; */
+    margin: 45px 0px;
+}
+
+.col1 img{
+    /* margin: 49px 32px; */
+    margin: 52px 0px;
+}
+    </style>
+</head>
+<body onscroll="scrollFunction()">
+    <!-- ...........navbar............ -->
+    <div class="header" id="head">
+
+        <div class="nav">
+            <ul>
+                <li><a href="">SHOP ALL</a></li>
+                <li><a href="">DOGS</a></li>
+                <li><a href="">CATS</a></li>
+                <li><a href="">BIRDS</a></li>
+                <li><a href="">FISH & AQUATICS</a></li>
+                <li><a href="">SMALL ANIMALS</a></li>
+                <li><a href="">RAPTILES</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+            
+            <span class="link">
+                <i class="fas fa-user-circle"></i>
+            </span>
+            <span class="btn">
+               <button>Log In</button>
+            </span>
+
+            <span class="shopping">
+                <i class="fas fa-shopping-cart"></i>
+            </span>
+
+        </div>
+    </div> 
+
+
+
+    <div class="header1" id="head1">
+
+        <div class="nav">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-shop"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-dog"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cat"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-dove"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-fish"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-paw"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-frog"></i></a></li>
+              
+            </ul>
+        </div>
+
+        <div class="icons">
+            
+            <span class="link">
+                <i class="fas fa-user-circle"></i>
+            </span>
+            <span class="btn">
+               <button>Log In</button>
+            </span>
+
+            <span class="shopping">
+                <i class="fas fa-shopping-cart"></i>
+            </span>
+
+        </div>
+    </div>
+
+
+    <div class="parallax">
+    <div class="container">
+   
+        <div class="card-body">
+               <div class="card-item">
+                   <div class="card-image">
+                       <img src="images/cats.webp">
+                   </div>
+
+                     <div class="heading">
+                           <h2>cat</h2>
+                    </div>
+                    <div class="btn">
+                           <button>shop now</button>
+                    </div>
+                  
+               </div>
+
+               <div class="card-item">
+                <div class="card-image">
+                    <img src="images/dogs.jpg">
+                </div>
+
+                  <div class="heading">
+                        <h2>dog</h2>
+                 </div>
+                 <div class="btn">
+                        <button>shop now</button>
+                 </div>
+               
+            </div>
+
+            <div class="card-item">
+                <div class="card-image">
+                    <img src="images/birds.jpg">
+                </div>
+
+                  <div class="heading">
+                        <h2>Birds</h2>
+                 </div>
+                 <div class="btn">
+                        <button>shop now</button>
+                 </div>
+               
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- ............brand......... -->
+
+    <div class="brand">
+        <div class="brand-row">
+            <h1>Best Brands at Lowest Prices</h1>
+        </div>
+
+        <div class="brand-row1">
+            <div class="col1">
+                <img src="https://static.wixstatic.com/media/82fcd3_d1a50a604e7746409627375577693ebd~mv2.png/v1/crop/x_0,y_13,w_300,h_132/fill/w_264,h_113,al_c,q_85,usm_0.66_1.00_0.01/82fcd3_d1a50a604e7746409627375577693ebd~mv2.webp" alt="" style="width:211px;height:90px;object-fit:cover;object-position:50% 50%">
+            </div>
+            <div class="col2">
+                <img src="https://static.wixstatic.com/media/82fcd3_7f2a74423be748dca8cab8d905b857b0~mv2.png/v1/crop/x_0,y_13,w_300,h_132/fill/w_304,h_138,al_c,lg_1,q_85/82fcd3_7f2a74423be748dca8cab8d905b857b0~mv2.webp" alt="" style="width:243px;height:110px;object-fit:cover;object-position:50% 50%">
+            </div>
+            <div class="col3">
+                <img src="https://static.wixstatic.com/media/82fcd3_5d50420463db42c9924cb2c11a194935~mv2.png/v1/crop/x_0,y_13,w_300,h_132/fill/w_354,h_154,al_c,lg_1,q_85/82fcd3_5d50420463db42c9924cb2c11a194935~mv2.webp" alt="" style="width:283px;height:123px;object-fit:cover;object-position:50% 50%">
+            </div>
+
+            <div class="col4">
+                <img src="https://static.wixstatic.com/media/82fcd3_9c64adc8c55e4de695315a7a25c41f15~mv2.png/v1/fill/w_410,h_215,al_c,lg_1,q_85/82fcd3_9c64adc8c55e4de695315a7a25c41f15~mv2.webp" alt="" style="width:328px;height:172px;object-fit:cover;object-position:50% 50%">
+            </div>
+            <div class="col5">
+                <img src="https://static.wixstatic.com/media/82fcd3_ae955c036e724d64b58f25347ca6daa0~mv2.png/v1/fill/w_375,h_200,al_c,lg_1,q_85/82fcd3_ae955c036e724d64b58f25347ca6daa0~mv2.webp" alt="" style="width:300px;height:160px;object-fit:cover;object-position:50% 50%">
+            </div>
+        </div>
+    </div>
+<!-- ....brand end............... -->
+
+
+<script>
+
+ 
+    var head1 = document.getElementById("head1");
+    var head = document.getElementById("head");
+   
+   
+    function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                      head1.style.top = "0";
+                      head.style.top = "-70px"
+               } else {
+                      head1.style.top = "-70px";
+                      head.style.top = "0px"
+              }
+          }  
+       
+    function hover(){
+          para.style.innerText = "SHOP ALL";
+
+
+    }
+
+   </script>   
+</body>
+</html>

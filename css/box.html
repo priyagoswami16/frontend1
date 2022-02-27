@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     *{
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+     }
+
+     .container{
+         width: 100%;
+         height: 70vh;
+         background: gray;
+         display: flex;
+     }
+
+     .left{
+         width: 35%;
+         height: 70vh;
+         background: #FAE8E0;
+         background-image: url("image/logo.png");
+         background-size: cover;
+         background-position: 100% 100%;
+         
+     }
+
+     .left .left-in{
+           color: #000;
+           /* width: 35%; */
+           height: 70vh;
+           background: #FAE8E0;
+           padding: 200px 40px;
+           display: none;
+           text-align: justify;
+           
+        }
+
+     .left .left-in p{
+           font-size: 30px;
+           
+     }
+
+     .left:hover .left-in{
+          display: block;
+     }
+     
+    
+     .right{
+         width: 65%;
+         height: 70vh; 
+         background: #F8FAFD;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-content: space-around;
+         padding: 20px;
+     }
+
+     .right-1{
+         height: 10vh;
+         margin: 40px;
+         padding: 20px;
+         font-size: 20px;
+         text-align: center;
+        
+     }
+
+     .right-1 p{
+         color: #000;
+     }
+
+    
+     .right-2{
+         margin: 40px;
+         padding: 12px;
+         text-align: center;
+     }
+
+     .right-2 a{
+       margin: 10px 30px;
+       text-decoration: none;
+       font-size: 25px;
+       font-weight: bold;
+       color: #A91B60;
+     }
+
+     a:hover{
+        color: #000;
+    }
+
+    </style>
+</head>
+<body>
+    <section>
+     <div class="container">
+         <div class="left">
+             <div class="left-in">
+                 <p>Our Happiness Guarantee:<br>
+                You will Love Your Havenly <br>
+                experience or Your money back.<br>
+            It's as simple as that.</p>
+             </div>
+         </div>
+         <div class="right">
+             <div class="right-1">
+                <p id="text"></p>
+            
+            </div>
+             <div class="right-2">
+                 <a href="" id="item1" onmouseover="code1()" onmouseout="out1()">Google</a>
+                 <a href="" id="item2" onmouseover="code2()" onmouseout="out2()">Instagram</a>
+                 <a href="" id="item3" onmouseover="code3()" onmouseout="out3()">Facebook</a>
+                 <a href="" id="item4" onmouseover="code4()" onmouseout="out4()">Twiter</a>
+             </div>
+         </div>
+     </div>
+    </section>
+
+
+    <script>
+
+    var item1 = document.getElementById("item1");
+     var item2 = document.getElementById("item2");
+    var item3 = document.getElementById("item3");
+    var item4 = document.getElementById("item4");
+    var text = document.getElementById("text");
+
+
+     
+    function code1(){
+      text.innerHTML = "At W3Schools you will find complete references about HTML elements,";  
+
+     }
+ 
+    // function out1(){
+    //           text.innerHTML = "";
+             
+    // }
+    
+    
+    function code2(){
+      text.innerHTML="Best online HTML code editor, helps you to write and test run your HTML code online from your browser. online HTML editor, run HTML online, HTML online editor.";  
+
+     }
+ 
+    function out2(){
+              text.innerHTML = "";
+             
+    }
+
+    function code3(){
+      text.innerHTML="Java Tutorial - W3Schools. W3Schools offers free online tutorials, references …";  
+
+     }
+ 
+    function out3(){
+              text.innerHTML = "";
+             
+    }
+
+
+    function code4(){
+      text.innerHTML="hii riya";  
+
+     }
+ 
+    // function out4(){
+    //           text.innerHTML = "";
+             
+    // }
+
+
+
+    </script>
+</body>
+</html>

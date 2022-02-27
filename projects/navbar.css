@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;1,600&family=IBM+Plex+Serif:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gelasio', serif;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+body{
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    /* background: #9AD0EC; */
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    transition-delay: 0.1s;
+ 
+  
+ 
+}
+
+/* .nav{
+    background-color: green;
+} */
+
+.nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    /* background-color: blue; */
+    list-style-type: none;
+}
+
+.nav ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+      /* background-color: aqua; */
+}
+
+.icons{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+ .icons .link{
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.icons button{
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ffff;
+
+}
+
+.icons .shopping{
+    font-size: 22px;
+    margin: 0px 0px 0px 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .nav{
+        display: none;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+   
+  }
+
+/* @media screen and (max-width: 960px) {
+    .nav{
+        display: none;
+    }
+   
+  }
+
+@media screen and (max-width: 720px) {
+    .nav{
+        display: none;
+    }
+   
+  }
+
+@media screen and (max-width: 480px) {
+    .nav{
+        display: none;
+    }
+    
+  }*/
+
+/* .......end.............. */
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;1,600&family=IBM+Plex+Serif:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gelasio', serif;
+    font-family: 'IBM Plex Serif', serif;
+} */
+
+.header1{
+    width: 100%;
+    background: #9AD0EC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    position: fixed;
+    top: -70px;
+    transition: top 0.3s;
+ 
+}
+
+/* .nav{
+    background-color: green;
+} */
+
+.nav ul li{
+    display: inline-block;
+    margin: 5px 30px;
+    /* background-color: blue; */
+    list-style-type: none;
+}
+
+.nav ul li a{
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    text-decoration: none;
+    text-align: center;
+    /* color: #000; */
+    /* background-color: aqua; */
+}
+
+  .fa-shop{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }  
+
+
+  .fa-dog{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }    
+
+  .fa-cat{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }   
+  
+  .fa-dove{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }    
+
+  .fa-fish{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }    
+
+
+  .fa-paw{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }  
+  
+  .fa-frog{
+    background: #3B5998;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+ /* .fa-solid{
+  
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: aqua;
+  
+ } */
+
+.icons{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.icons .link{
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.icons button{
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ffff;
+
+}
+
+.icons .shopping{
+    font-size: 22px;
+    margin: 0px 0px 0px 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .nav{
+        display: none;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+   
+  }

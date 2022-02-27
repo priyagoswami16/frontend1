@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="navbar.css">
+    <title>Navbar</title>
+</head>
+<body onscroll="scrollFunction()">
+     <div class="header" id="head">
+
+        <div class="nav">
+            <ul>
+                <li><a href="">SHOP ALL</a></li>
+                <li><a href="">DOGS</a></li>
+                <li><a href="">CATS</a></li>
+                <li><a href="">BIRDS</a></li>
+                <li><a href="">FISH & AQUATICS</a></li>
+                <li><a href="">SMALL ANIMALS</a></li>
+                <li><a href="">RAPTILES</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+            
+            <span class="link">
+                <i class="fas fa-user-circle"></i>
+            </span>
+            <span class="btn">
+               <button>Log In</button>
+            </span>
+
+            <span class="shopping">
+                <i class="fas fa-shopping-cart"></i>
+            </span>
+
+        </div>
+    </div> 
+
+
+
+    <div class="header1" id="head1">
+
+        <div class="nav">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-shop"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-dog"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cat"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-dove"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-fish"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-paw"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-frog"></i></a></li>
+              
+            </ul>
+        </div>
+
+        <div class="icons">
+            
+            <span class="link">
+                <i class="fas fa-user-circle"></i>
+            </span>
+            <span class="btn">
+               <button>Log In</button>
+            </span>
+
+            <span class="shopping">
+                <i class="fas fa-shopping-cart"></i>
+            </span>
+
+        </div>
+    </div>
+<!-- ...............navbar............. -->
+
+
+
+     <script>
+
+ 
+      var head1 = document.getElementById("head1");
+      var head = document.getElementById("head");
+     
+     
+      function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        head1.style.top = "0";
+                        head.style.top = "-70px"
+                 } else {
+                        head1.style.top = "-70px";
+                        head.style.top = "0px"
+                }
+            }  
+         
+      function hover(){
+            para.style.innerText = "SHOP ALL";
+
+
+      }
+
+     </script>   
+
+    </body>
+</html>

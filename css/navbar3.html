@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <title>Document</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;1,600&family=IBM+Plex+Serif:wght@300;400;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            font-family: 'Gelasio', serif;
+             font-family: 'IBM Plex Serif', serif;
+        }
+
+         .container{
+             width: 100%;
+             background: linear-gradient(315deg, #1f005c, #4c005f, #6d0061, #8b0460, #a51e5f, #bc365d, #cf4f5c, #df675c, #ed815e, #f79b62, #ffb56b);
+             border: 2px solid black;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;     
+         }
+
+         .container .logo{
+              text-align: center;
+              padding: 8px 10px; 
+            
+         }
+
+         .container .logo h3{
+              font-size: 30px;
+              font-weight: bold;
+         }
+
+        .container nav ul{
+             margin: 8px 10px;
+         }
+
+         .container nav ul li{
+              list-style-type: none;
+              display: inline-block;
+              padding: 8px 10px; 
+              margin: 0px 20px;
+        
+         }
+
+         .container nav ul li a{
+              text-decoration: none;
+              color: #000;
+              font-size: 20px;
+         }
+
+         .container .btn{
+             display: flex;
+             justify-content: space-around;
+             
+         }
+
+         .container .btn .btn1{
+              margin: 8px 10px;
+              padding: 8px 10px; 
+              border-radius: 20px;
+              text-align: center;
+              outline: none;
+              border: none;
+              cursor: pointer;
+              background: #ffffff;
+         }
+
+         .container .btn .btn2{
+              margin: 8px 10px;
+              padding: 8px 10px; 
+              border-radius: 20px;
+              text-align: center;
+              outline: none;
+              border: none;
+              cursor: pointer;
+              background: #ffffff;
+         }
+
+        
+         @media only screen and (max-width: 576px){
+             .container{
+                 width: 100%;
+                background: linear-gradient(330deg, #000000, #ffffff);
+             }
+
+             .container nav {
+                 display: none;
+             }
+
+             .container .btn1,.btn2 {
+                 display: none;
+             }
+
+           
+         }
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="logo">
+            <h3>Priya</h3>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">Plans</a></li>
+                <li><a href="">Learn</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </nav>
+         
+        <div class="btn">
+            <button class="btn1">Login In</button>
+            <button class="btn2">Sign Up</button>
+        </div>
+      
+    </div>
+</body>
+</html>

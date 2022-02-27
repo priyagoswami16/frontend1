@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template</title>
+    <style>
+       .main{
+           border: 1px solid green;
+           display: grid;
+           grid-template-columns: repeat(6,1fr);
+           /* grid-column-gap: 50px;
+           grid-row-gap: 50px; */
+           
+       }
+
+       .main div{
+           border: 1px solid red;
+           height: 50px;
+       }
+
+       .one{
+           grid-column-start: 1;
+       }
+
+       .seven{
+           grid-column: 1/7;
+       }
+
+       .eight{
+           grid-column: 1/4;
+       }
+
+       .nine{
+           grid-column: 4/7;
+       }
+
+       .ten{
+           grid-column: 1/7;
+       }
+    
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+        <div class="five">five</div>
+        <div class="six">six</div>
+        <div class="seven">seven</div>
+        <div class="eight">eight</div>
+        <div class="nine">nine</div>
+        <div class="ten">ten</div>
+    </div>
+
+   
+
+</body>
+</html>

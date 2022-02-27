@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <title>sliders</title>
+</head>
+<body>
+    <div class="slide-container">
+
+        <div class="slide-image">
+            <img src="images/logo.jpg" alt="">
+            <div class="text">caption 1</div>
+        </div>
+
+        <div class="slide-image">
+            <img src="images/logo.jpg" alt="">
+            <div class="text">caption 2</div>
+        </div>
+
+        <div class="slide-image">
+            <img src="images/logo.jpg" alt="">
+            <div class="text">caption 3</div>
+        </div>
+
+        <div class="slide-image">
+            <img src="images/logo.jpg" alt="">
+            <div class="text">caption 4</div>
+        </div>
+       
+        <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+        <span class="arrow next" onclick="controller(1)">&#10095</span>
+
+    </div>
+    <div style="text-align:center">
+       <ul class="menu">
+           <li><a href="" class="dot" onclick="currentSlide(0)"></a></li>
+           <li><a href="" class="dot" onclick="currentSlide(1)"></a></li>
+           <li><a href="" class="dot" onclick="currentSlide(2)"></a></li>
+           <li><a href="" class="dot" onclick="currentSlide(3)"></a></li>
+       </ul>
+      </div>
+
+    <script>
+
+     var index = 0;
+
+     function controller(x){
+         index = index + x;
+         slide(index);
+       
+     }
+
+     function currentSlide(x){
+         index =  x;
+         slide(index);
+      
+     }
+
+     function slide(number){
+         var slideImage = document.getElementsByClassName("slide-image");
+         var dots = document.getElementsByClassName("dot");
+         console.log(dots);
+        
+     
+        //    images 4(0,1,2,3)4
+
+         if(number==slideImage.length){
+            index = 0;
+            number = 0;
+           }
+
+         if(number<0){
+            index = slideImage.length-1;
+            number = slideImage.length-1;
+           }  
+
+         //    dots 4(0,1,2,3)4
+        if(number==dots.length){
+            index = 0;
+            number = 0;
+           }
+
+        if(number<0){
+            index = dots.length-1;
+            number = dots.length-1;
+           }    
+         
+         // image hide when next image show
+         for(var item of slideImage){
+            item.style.display = "none";
+         }
+
+        // dots hide when next dots show
+         for(var item of dots){
+            item.classList.remove("active");
+             item.style.background = "gray";
+         }
+          
+         slideImage[number].style.display = "block"; 
+         dots[number].classList.add("active");
+         dots[number].style.background = "green";
+         
+     }
+
+     slide(index);  
+  
+
+    </script>
+</body>
+</html>

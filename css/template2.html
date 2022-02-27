@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Document</title>
+    <style>
+     
+     *{
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+     }
+      
+     .container{
+    
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         /* border: 1px solid black; */
+         grid-column-gap: 10px;
+           grid-row-gap: 10px;
+           /* padding: 10px; */
+     }
+
+     .container div{
+         /* height: 50px; */
+         /* border: 1px solid black; */
+         grid-column: 1/6;
+
+     }
+
+     .box1{
+         height: 100vh;
+         background-image: url("image/white-mug-5794597_960_720.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 100% 50%;
+     }
+
+     .header{
+         height:70vh ;
+         /* background: #76B947; */
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         
+     }
+
+     .header .main{
+         /* background: chartreuse; */
+         text-align: center;
+         padding: 10px 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+       
+     }
+
+     .header .main .logo{  
+       padding-bottom: 10px;
+     }
+
+     .header .main .logo h1{  
+      text-shadow: 3px 3px 1px #fff;
+     }
+
+     /* .header .main nav{
+         background: chocolate;
+       
+        } */
+
+     ul li{
+         list-style-type: none;
+         display: inline-block;
+         margin: 20px;
+         padding: 10px 30px;
+         /* background: cornflowerblue; */
+     }
+     
+     ul li a{
+         text-decoration: none;
+         font-size: 18px;
+         font-weight: bold;
+         color: #fff;
+         text-shadow: 2px 2px 1px #000;
+     }
+
+
+
+     .header .home{
+         /* background: chartreuse; */
+         text-align: center;
+         margin: 0px auto;
+         padding: 10px;
+         width: 400px;
+     }
+
+     .header .home p{
+        margin-top: 30px;
+        color: #333652;
+        text-shadow: 1px 1px 2px #fff;
+     }
+
+     .header .home h1{
+       text-shadow: 2px 2px 2px #fff;
+     }
+
+     .box2{
+         height: 50vh;
+         display: flex;
+        
+     }
+
+     .child-1{
+         width: 40%;
+         height: 50vh;
+         background-image: url("image/coffee2.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 50% 100%;
+        
+     }
+
+     .child-2{
+         width: 60%;
+         height: 50vh; 
+         background: #76B947;
+         color: #fff;
+        }
+
+    .child-2 .text, .child-3 .text, .child-6 .text3{
+        width: 400px;
+        height: 40vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 40px auto;
+        padding: 20px;
+    }   
+    
+    .btn{
+        padding: 10px 10px;
+        cursor: pointer;
+        outline: none;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+    }
+
+
+     .box3{
+         height: 100vh;
+       background: #333652;
+       text-align: center;
+       padding: 50px 20px;
+      
+     }
+
+     .box3 .row{
+         /* background-color: aqua; */
+         width: 85%;
+         height: 50vh;
+         margin: 100px auto;
+         display: flex;
+         align-items: center;  
+     }
+
+     .box3 p{
+         margin-top: 30px;
+         color: #fff;
+     }
+
+     .box3 h1{
+         margin-top: 20px;
+         color: #fff;
+         text-shadow: 2px 2px 2px #FAD02C;
+     }
+
+     .box3 .row div h2{
+        margin-top: 10px;
+     }
+     
+     .box3 .row .col-1{
+        width: 300px;
+        height: 40vh;
+        background-color: #FAD02C;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+     }
+
+     .box3 .row .col-1:hover{
+        box-shadow: 3px 3px 1px #fff,-3px -3px 1px #fff ;
+     }
+
+     .box3 .row .col-1 .icon{
+          margin-top: 10px;
+     }
+     .box3 .row .col-2{
+        width: 300px;
+        height: 40vh;
+        background-color: #FAD02C;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+     }
+
+     .box3 .row .col-2:hover{
+        box-shadow: 3px 3px 1px #fff,-3px -3px 1px #fff ;
+     }
+
+     .box3 .row .col-2 .icon{
+          margin-top: 10px;
+     }
+     .box3 .row .col-3{
+        width: 300px;
+        height: 40vh;
+        background-color: #FAD02C;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+     }
+
+     .box3 .row .col-3 .icon{
+          margin-top: 10px;
+     }
+
+     .box3 .row .col-3:hover{
+        box-shadow: 3px 3px 1px #fff,-3px -3px 1px #fff ;
+     }
+
+     .box3 .row .col-4{
+        width: 300px;
+        height: 40vh;
+        background-color: #FAD02C;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+     }
+
+     .box3 .row .col-4 .icon{
+          margin-top: 10px;
+     }
+
+     .box3 .row .col-4:hover{
+        box-shadow: 3px 3px 1px #fff,-3px -3px 1px #fff ;
+     }
+
+     .box3 .row  img{
+         width: 70%;
+        height: 70%; 
+        border-radius: 50%;
+     }
+     
+     .box4{
+         height: 50vh;
+         display: flex;
+     }
+
+     .child-3{
+         width: 60%;
+         height: 50vh;
+         background: #76B947;
+        
+     }
+
+     .child-4{
+         width: 40%;
+         height: 50vh; 
+         background-image: url("image/coffee.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 50% 100%;
+        }
+
+     .box5{
+         height: 100vh;
+         background-image: url("image/white-mug-5794597_960_720.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 100% 50%;
+     }
+
+     .box6{
+         height: 50vh;
+         display: flex;
+     }
+
+     .child-5{
+         width: 40%;
+         height: 50vh; 
+         background-image: url("image/map.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 50% 100%;
+        }
+
+        .child-6{
+         width: 60%;
+         height: 50vh;
+         background: #76B947; 
+        }
+
+        .child-6 input{
+            padding: 10px 30px;
+            border: none;
+        }
+
+     .footer7{
+         height: 70vh;
+         /* background: #E3E8E9; */
+         background: #FAD02C;
+        padding: 20px;
+        
+         
+     }
+
+     .footer-text{
+        width: 500px; 
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 100px auto;
+        align-items: center;
+        /* background: red; */
+        padding: 10px;
+     }
+
+     .footer-text p{
+         text-align: justify;
+     }
+     .footer-text .icon i{
+         display: inline-block;
+         margin: 0px 10px;
+     }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="box1">
+             <div class="header">
+                <div class="main">
+                    <div class="logo">
+                        <h1>COFFEE</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                 <div class="home">
+                    <h1>HAPPINESS IN A CUP</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit harum laboriosam consectetur tempora quam nobis eveniet nam amet at, voluptate in soluta deleniti cum iste quas quaerat nisi aspernatur.</P>
+                </div>
+             </div>
+           
+         </div>
+         <div class="box2">
+             <div class="child-1"></div>
+             <div class="child-2">
+                 <div class="text">
+                     <h1>HOMEMADE</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur earum voluptatibus nostrum odio laborum quo. Voluptatibus repella
+                         uia placeat expedita vitae quod tenetur, officiis, explicabo eligendi eaque provident totam.</p>
+                     <button class="btn">Submit</button>    
+                 </div>
+             </div>
+         </div>
+         <div class="box3">
+              <h1>ONLINE TEA SHOP</h1>
+              <p>Lorem eligendi perferendis dignissimos debitis dolorum incidunt. Laborum esse molestias <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint unde deserunt corporis assumenda. Necessitatibus modi architecto sunt quaerat. Deleniti,<br> porro? Blanditiis cumque amet omnis. nam recusandae consequatur voluptates est mollitia odio asperiores at?</p>
+              <div class="row">
+                  <div class="col-1">
+                      <img src="image/cup.jpg" alt="">
+                      <h2>COFFEE</h2>
+                      <div class="icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                    <img src="image/cup.jpg" alt="">
+                    <h2>COFFEE</h2>
+                       <div class="icon">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                      </div> 
+                  </div>
+                  <div class="col-3">
+                    <img src="image/cup.jpg" alt="">
+                    <h2>COFFEE</h2>
+                    <div class="icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                  </div>
+
+                  <div class="col-4">
+                    <img src="image/cup.jpg" alt="">
+                    <h2>COFFEE</h2>
+                    <div class="icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                  </div>
+              </div>
+         </div>
+         <div class="box4">
+             <div class="child-3">
+                <div class="text">
+                    <h1>50% OFF IN APIRL</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur earum voluptatibus nostrum odio laborum quo. Voluptatibus repella
+                        uia placeat expedita vitae quod tenetur, officiis, explicabo eligendi eaque provident totam.</p>
+                    <button class="btn">Submit</button>    
+                </div>
+             </div>
+             <div class="child-4"></div>
+         </div>
+         <div class="box5"></div>
+         <div class="box6">
+            <div class="child-5"></div>
+            <div class="child-6">
+                <div class="text3">
+                    <h1>CONTACT</h1>
+                   <form action="">
+                    <input type="text" value="Name" placeholder="Name"><br><br>
+                    <input type="text" value="Email" placeholder="Email">
+                   </form>
+                    <button class="btn">Submit</button>    
+                </div>
+            </div>
+         </div>
+         <div class="footer7">
+             <div class="footer-text">
+                 <h1>VERDURE</h1>
+                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit omnis, nemo labore recusandae iusto ipsa numquam beatae non praesentium deserunt explicabo, suscipit ipsam similique laudantium temporibus. Voluptatem ratione recusandae quaerat.</P>
+                  <div class="icon">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </div>
+                  <p>copyright@ 2021</p>
+                </div>
+         </div>
+     </div>
+</body>
+</html>
